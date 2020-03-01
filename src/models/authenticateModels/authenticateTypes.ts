@@ -8,7 +8,13 @@ export interface inputsPropagatedModel {
   isValid: boolean
 }
 
+export interface responseData {
+  hasUserAuthenticated: boolean,
+  username: string,
+  userId: string
+}
+
 export interface authenticationContainerModel {
   authKey: null | string,
-  responseData: Object
+  responseData: responseData
 }

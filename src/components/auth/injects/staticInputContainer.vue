@@ -41,7 +41,7 @@
       raw: {}
     };
 
-    public mutateInputs(){
+    public mutateInputs(): void{
       let authKey: string = Object.keys(this.staticInputs.raw).join("");
       let isValid: boolean =
           authKey.length === this.computedAuthenticationLength &&
@@ -85,7 +85,7 @@
     margin: 5px
     border: 0
     border-radius: 3px
-    background: lighten($colours.grey.g10, 10%)
+    background: lighten($colours.blue.bp, 10%)
     font-size: 25px
     color: white
     text-align: center
